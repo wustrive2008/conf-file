@@ -1,0 +1,39 @@
+[user]
+	name = wubaoguo
+	email = wustrive_2008@126.com
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	ui = auto
+
+[core]
+	quotepath=false
+	edit = vim
+	autocrlf = true
+	filemode = false
+	
+[i18n]
+	commitencoding = UTF-8
+	
+[gui]
+	encoding = utf-8
+[alias]
+	stage = add
+    unstage = reset HEAD
+	hb = merge --no-ff
+	rmv = remote -v
+    ci = commit
+    cia = commit --amend
+    co = checkout
+    br = branch
+    st = status
+    dc = diff --cached
+    dw = diff --word-diff
+    aa = add -A
+    rmall = !git ls-files --deleted | xargs git rm
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d%Creset\\ %cn\\ %Cblue%cr%Creset\\ %Cgreen%s%Creset" --decorate --numstat
+    lg = log --pretty=format:"%C(yellow)%h%Cred%d%Creset\\ %cn\\ %Cblue%cr%Creset\\ %Cgreen%s%Creset" --decorate
+    lt = log --pretty=format:"%C(yellow)%h%Cred%d%Creset\\ %cn\\ %Cblue%cr%Creset\\ %Cgreen%s%Creset" --graph
+[receive]
+	denyCurrentBranch = ignore
